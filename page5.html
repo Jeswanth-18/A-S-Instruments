@@ -63,11 +63,11 @@
                 </div>
             </div>
 
-        <div style="margin-left: 60%; margin-top: 3%;">Total Expenditure <input type="text"></div>
+        <div style="margin-top: 3%;margin-left:60%;">Total Expenditure <input type="text"></div>
         <div style="margin-top: 3%;">
-            <div >
+            <div>
                 <div style="text-align: center; margin-bottom: 3%;"> <h1 style="margin-top: 40px; ">Office Expences</h1></div>
-                <div class="row">
+                <div class="row" id="addmore">
                   <div class="col-lg-1">
                     S.NO<br><input type="text" style="width: 50px;">
                   </div>
@@ -86,46 +86,87 @@
                   <div class="col-lg-2 col-md-3">
                     Paid by<br><input type="text" class="a">
                   </div>
-                  <div style="margin-top:2%; margin-left:80%">
+                  <div style="margin-top:2%;">
                     <input type="file" value="Upload" >
                   </div>
                   <br><br>
                 </div>
-                <div style="margin-top: 3%;"><label>Total</label><input type="text" style="width: 150px;"></div>
+                
+                <script>
+                  var patch ='<div class="col-lg-1">S.NO<br><input type="text" style="width: 50px;"></div><div class="col-lg-2 col-lg-3">Description of Expences<br><input type="text"></div><div class="col-lg-2 col-md-3">Amount<br><input type="text" class="a"></div><div class="col-lg-2 col-md-3">Date of Payment<br><input type="text" class="a"></div><div class="col-lg-2 col-md-3">Payment mode<br><input type="text" class="a"></div><div class="col-lg-2 col-md-3">Paid By<br><input type="text" class="a"></div><div style="margin-top:2%;"><input type="file" value="Upload" ></div><br><br>'
+               </script>
+               <br>
+                  <div class="row">
+                  <div class="col-lg-3 mt-3">
+                    <input type="button" value="Add More+" class="btn btn-primary" onclick="document.getElementById('addmore').innerHTML=(document.getElementById('addmore').innerHTML+patch);" >  
+                  </div>
+                  <div class="col-lg-6"></div>
+                  <div class="col-lg-3 mt-3">
+                    <label>Total</label><input type="text" style="width: 150px;">
+                  </div>
                 <div style="text-align: center;margin-top: 3%;"><input type="submit" name="Sumbit" class="btn btn-primary" style="text-align: center;"></div>
+              </div>
+              </div>
               </div>
             </form>
 
-        <div style="margin-top: 3%;">
-            <div>
-            <form action="" method="post">
-                <div style="text-align: center; margin-bottom: 2%;"> <h1 style="margin-top: 40px; ">Salary Expenditure</h1></div>
-                <div class="row">
-                  <div class="col-lg-1">
-                    S.NO<br><input type="text" style="width: 50px;">
+            <div style="margin-top: 3%;">
+              <div>
+                <form action="" method="post"></form>
+                  <div style="text-align: center; margin-bottom: 3%;"> <h1 style="margin-top: 40px;">Salary Expenditure</h1></div>
+                  <div class="row" id="addmore1">
+                    <div class="col-lg-1">
+                      S.NO<br><input type="text" style="width: 50px;">
+                    </div>
+                    <div class="col-lg-3 ">
+                      Description of Expences<br><input type="text">
+                    </div>
+                    <div class="col-lg-2 col-md-3 ">
+                      Amount<br><input type="text" class="a">
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                      Date of Payment<br><input type="text" class="a">
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                      Payment mode<br><input type="text" class="a">
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                      Paid by<br><input type="text" class="a">
+                    </div>
+                    <div style="margin-top:2%;">
+                      <input type="file" value="Upload" >
+                    </div>
+                    <br><br>
                   </div>
-                  <div class="col-lg-2 ">
-                    Description of Expences<br><input type="text">
-                  </div>
-                  <div class="col-lg-2 col-md-3 ">
-                    Amount<br><input type="text" class="a">
-                  </div>
-                  <div class="col-lg-2 col-md-3">
-                    Date of Payment<br><input type="text" class="a">
-                  </div>
-                  <div class="col-lg-2 col-md-3">
-                    Payment mode<br><input type="text" class="a">
-                  </div>
-                  <div class="col-lg-2 col-md-3">
-                    Paid by<br><input type="text" class="a">
-                  </div>
-                  <br><br>
+                  <script>
+                    var patch1 ='<div class="col-lg-1">S.NO<br><input type="text" style="width: 50px;"></div><div class="col-lg-2 col-lg-3">Description of Expences<br><input type="text"></div><div class="col-lg-2 col-md-3">Amount<br><input type="text" class="a"></div><div class="col-lg-2 col-md-3">Date of Payment<br><input type="text" class="a"></div><div class="col-lg-2 col-md-3">Payment mode<br><input type="text" class="a"></div><div class="col-lg-2 col-md-3">Paid By<br><input type="text" class="a"></div><div style="margin-top:2%; "><input type="file" value="Upload" ></div><br><br>'
+                 </script>
+                    <br>
+                    <div class="row">
+                    <div class="col-lg-3 mt-3">
+                      <input type="button" value="Add More+" class="btn btn-primary" onclick="document.getElementById('addmore1').innerHTML=(document.getElementById('addmore1').innerHTML+patch1);" >  
+                    </div>
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-3 mt-3">
+                      <label>Total</label><input type="text" style="width: 150px;">
+                    </div>
+                  <div style="text-align: center;margin-top: 3%;margin-bottom: 5%;"><input type="submit" name="Sumbit" class="btn btn-primary" style="text-align: center;"></div>
                 </div>
-                <div style="margin-top: 3%;"><label>Total</label><input type="text" style="width: 150px;"></div>
-                <div style="text-align: center;margin-top: 3%;"><input type="submit" name="Sumbit" class="btn btn-primary" style="text-align: center;"></div>
-              </div>
+               </div>
             </form>
+            <div class="row" style="margin-bottom: 3%;">
+              <div class="col-lg-4">
+                <input type="button" class="btn btn-primary w-50 mt-3" value="print" >
+              </div>
+            <div class="col-lg-4">
+              <input type="button" value="View" class="btn btn-primary w-50 mt-3">
+            </div>
+            <div class="col-lg-4">
+              <input type="text" value="Download" class="btn btn-primary w-50 mt-3">
+            </div>
+          </div> 
       </div>
+    </div>
     </div>
 </body>
 </html>
