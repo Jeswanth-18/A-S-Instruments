@@ -46,6 +46,7 @@
                           <th scope="col">Name of the Project</th>
                           <th scope="col">Project Value</th>
                           <th scope="col">Status</th>
+
                           
                         </tr>
                       </thead>
@@ -55,12 +56,13 @@
                           <td> </td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop1" onchange="drop1();">
+                                <option value="d1v1">Status</option>
+                                <option value="d1v2">Ongoing</option>
+                                <option value="d1v3">Still not Started</option>
+                                <option value="d1v4">Completed</option>
                             </select>
+                            <div id="date1" style="display: none;"><input type="date"></input></div>
                             </td>
                         </tr>
                         <tr>
@@ -68,12 +70,13 @@
                           <td></td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop2" onchange="drop2();">
+                                <option value="d2v1">Status</option>
+                                <option value="d2v2">Ongoing</option>
+                                <option value="d2v3">Still not Started</option>
+                                <option value="d2v4">Completed</option>
                             </select>
+                            <div id="date2" style="display: none;"><input type="date"></input></div>
                           </td>
                         </tr>
                         <tr>
@@ -81,12 +84,13 @@
                           <td></td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="">Status</option>
-                                <option value="">Ongoing</option>
-                                <option value="">Still not Started</option>
-                                <option value="">Completed</option>
+                            <select id="drop3" onchange="drop3();">
+                                <option value="d3v1">Status</option>
+                                <option value="d3v2">Ongoing</option>
+                                <option value="d3v3">Still not Started</option>
+                                <option value="d3v4">Completed</option>
                             </select>
+                            <div id="date3" style="display: none;"><input type="date"></input></div>
                           </td>
                         </tr>
                       </tbody>
@@ -113,12 +117,13 @@
                           <td> </td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop4" onchange="drop4();">
+                                <option value="d4v1">Status</option>
+                                <option value="d4v2">Ongoing</option>
+                                <option value="d4v3">Still not Started</option>
+                                <option value="d4v4">Completed</option>
                             </select>
+                            <div id="date4" style="display: none;"><input type="date"></input></div>
                             </td>
                         </tr>
                         <tr>
@@ -126,26 +131,28 @@
                           <td></td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop5" onchange="drop5();">
+                                <option value="d5v1">Status</option>
+                                <option value="d5v2">Ongoing</option>
+                                <option value="d5v3">Still not Started</option>
+                                <option value="d5v4">Completed</option>
                             </select>
-                          </td>
+                            <div id="date5" style="display: none;"><input type="date"></input></div>
+                            </td>
                         </tr>
                         <tr>
                           <th scope="row">3</th>
                           <td></td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="">Status</option>
-                                <option value="">Ongoing</option>
-                                <option value="">Still not Started</option>
-                                <option value="">Completed</option>
+                            <select id="drop6" onchange="drop6();">
+                                <option value="d6v1">Status</option>
+                                <option value="d6v2">Ongoing</option>
+                                <option value="d6v3">Still not Started</option>
+                                <option value="d6v4">Completed</option>
                             </select>
-                          </td>
+                            <div id="date6" style="display: none;"><input type="date"></input></div>
+                            </td>
                         </tr>
                       </tbody>
                 </table>
@@ -171,13 +178,13 @@
                           <td> </td>
                           <td></td>
                           <td>
-                            <select onchange="myFunction();" id="drop">
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop7" onchange="drop7();">
+                                <option value="d7v1">Status</option>
+                                <option value="d7v2">Ongoing</option>
+                                <option value="d7v3">Still not Started</option>
+                                <option value="d7v4">Completed</option>
                             </select>
-                             <div id="sat" style="display:inline-block;"></div>
+                            <div id="date7" style="display: none;"><input type="date"></input></div>
                             </td>
                         </tr>
                         <tr>
@@ -185,28 +192,28 @@
                           <td></td>
                           <td></td>
                           <td>
-                            <select onchange="myFunction1();" id="drop1">
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop8" onchange="drop8();">
+                                <option value="d8v1">Status</option>
+                                <option value="d8v2">Ongoing</option>
+                                <option value="d8v3">Still not Started</option>
+                                <option value="d8v4">Completed</option>
                             </select>
-                            <div id="sat1" style="display:inline-block;"></div>
-                          </td>
+                            <div id="date8" style="display: none;"><input type="date"></input></div>
+                            </td>
                         </tr>
                         <tr>
                           <th scope="row">3</th>
                           <td></td>
                           <td></td>
                           <td>
-                            <select onchange="myFunction2();" id="drop2">
-                                <option value="">Status</option>
-                                <option value="">Ongoing</option>
-                                <option value="">Still not Started</option>
-                                <option value="c" >Completed</option>
+                            <select id="drop9" onchange="drop9();">
+                                <option value="d9v1">Status</option>
+                                <option value="d9v2">Ongoing</option>
+                                <option value="d9v3">Still not Started</option>
+                                <option value="d9v4">Completed</option>
                             </select>
-                            <div id="sat2" style="display:inline-block;"></div>
-                          </td>
+                            <div id="date9" style="display: none;"><input type="date"></input></div>
+                            </td>
                         </tr>
                       </tbody>
                 </table>
@@ -232,12 +239,13 @@
                           <td> </td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop10" onchange="drop10();">
+                                <option value="d10v1">Status</option>
+                                <option value="d10v2">Ongoing</option>
+                                <option value="d10v3">Still not Started</option>
+                                <option value="d10v4">Completed</option>
                             </select>
+                            <div id="date10" style="display: none;"><input type="date"></input></div>
                             </td>
                         </tr>
                         <tr>
@@ -245,26 +253,28 @@
                           <td></td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="s">Status</option>
-                                <option value="Og">Ongoing</option>
-                                <option value="sns">Still not Started</option>
-                                <option value="c">Completed</option>
+                            <select id="drop11" onchange="drop11();">
+                                <option value="d11v1">Status</option>
+                                <option value="d11v2">Ongoing</option>
+                                <option value="d11v3">Still not Started</option>
+                                <option value="d11v4">Completed</option>
                             </select>
-                          </td>
+                            <div id="date11" style="display: none;"><input type="date"></input></div>
+                            </td>
                         </tr>
                         <tr>
                           <th scope="row">3</th>
                           <td></td>
                           <td></td>
                           <td>
-                            <select>
-                                <option value="">Status</option>
-                                <option value="">Ongoing</option>
-                                <option value="">Still not Started</option>
-                                <option value="">Completed</option>
+                            <select id="drop12" onchange="drop12();">
+                                <option value="d12v1">Status</option>
+                                <option value="d12v2">Ongoing</option>
+                                <option value="d12v3">Still not Started</option>
+                                <option value="d12v4">Completed</option>
                             </select>
-                          </td>
+                            <div id="date12" style="display: none;"><input type="date"></input></div>
+                            </td>
                         </tr>
                       </tbody>
                 </table>
@@ -281,41 +291,113 @@
             document.getElementById("c").style.display="block";
         }
 
-        function myFunction() {
-            var y=document.getElementById("drop").value;
-            var x = document.createElement("INPUT");
-  		        x.setAttribute("type", "date");
-  	        if(y=="c"){
-    	        
-
-  		        document.getElementById("sat").appendChild(x);
-                
-            }
-            else{
-                document.getElementById("sat").removeChild(x);   
-            }
+        function drop1(){
+          drop=document.getElementById("drop1").value;
+          if(drop=="d1v4"){
+              document.getElementById("date1").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date1").style.display="none";
+          }
         }
-
-        function myFunction1() {
-            var y=document.getElementById("drop1").value;
-           
-  	        if(y=="c"){
-    	        var x = document.createElement("INPUT");
-  		        x.setAttribute("type", "date");
-
-  		        document.getElementById("sat1").appendChild(x);
-            }
+        function drop2(){
+          drop=document.getElementById("drop2").value;
+          if(drop=="d2v4"){
+              document.getElementById("date2").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date2").style.display="none";
+          }
         }
-
-        function myFunction2() {
-            var y=document.getElementById("drop2").value;
-           
-  	        if(y=="c"){
-    	        var x = document.createElement("INPUT");
-  		        x.setAttribute("type", "date");
-
-  		        document.getElementById("sat2").appendChild(x);
-            }
+        function drop3(){
+          drop=document.getElementById("drop3").value;
+          if(drop=="d3v4"){
+              document.getElementById("date3").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date3").style.display="none";
+          }
+        }
+        function drop4(){
+          drop=document.getElementById("drop4").value;
+          if(drop=="d4v4"){
+              document.getElementById("date4").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date4").style.display="none";
+          }
+        }
+        function drop5(){
+          drop=document.getElementById("drop5").value;
+          if(drop=="d5v4"){
+              document.getElementById("date5").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date5").style.display="none";
+          }
+        }
+        function drop6(){
+          drop=document.getElementById("drop6").value;
+          if(drop=="d6v4"){
+              document.getElementById("date6").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date6").style.display="none";
+          }
+        }
+        function drop7(){
+          drop=document.getElementById("drop7").value;
+          if(drop=="d7v4"){
+              document.getElementById("date7").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date7").style.display="none";
+          }
+        }
+        function drop8(){
+          drop=document.getElementById("drop8").value;
+          if(drop=="d8v4"){
+              document.getElementById("date8").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date8").style.display="none";
+          }
+        }
+        function drop9(){
+          drop=document.getElementById("drop9").value;
+          if(drop=="d9v4"){
+              document.getElementById("date9").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date9").style.display="none";
+          }
+        }
+        function drop10(){
+          drop=document.getElementById("drop10").value;
+          if(drop=="d10v4"){
+              document.getElementById("date10").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date10").style.display="none";
+          }
+        }
+        function drop11(){
+          drop=document.getElementById("drop11").value;
+          if(drop=="d11v4"){
+              document.getElementById("date11").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date11").style.display="none";
+          }
+        }
+        function drop12(){
+          drop=document.getElementById("drop12").value;
+          if(drop=="d12v4"){
+              document.getElementById("date12").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date12").style.display="none";
+          }
         }
     </script>
 </body>
